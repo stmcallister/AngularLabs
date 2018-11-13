@@ -1,0 +1,17 @@
+<p>
+  {{joke.setup}} <b>{{joke.punchline}}</b>
+</p>
+<div>
+  LOLs: <app-vote 
+          [voteCount]="joke.lols" 
+          (onVote)="upVote()"></app-vote>
+</div>
+<div>
+  Groans: <app-vote 
+            [voteCount]="joke.groans" 
+            (onVote)="downVote()"></app-vote>
+</div>
+
+
+
+
